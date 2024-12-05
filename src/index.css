@@ -1,0 +1,28 @@
+@import './fonts.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.purple-streak {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(147, 51, 234, 0.3) 50%,
+    transparent 100%
+  );
+  animation: shimmer 2s infinite;
+}
+
+.animate-shimmer {
+  position: relative;
+  isolation: isolate;
+}

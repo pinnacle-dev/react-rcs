@@ -1,0 +1,45 @@
+{
+  "name": "react-rcs",
+  "version": "1.0.0",
+  "description": "A live preview of RCS Business Messages right in your browser",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
+    "@storybook/addon-essentials": "^8.4.6",
+    "@storybook/addon-interactions": "^8.4.6",
+    "@storybook/addon-onboarding": "^8.4.6",
+    "@storybook/blocks": "^8.4.6",
+    "@storybook/react": "^8.4.6",
+    "@storybook/react-vite": "^8.4.6",
+    "@storybook/test": "^8.4.6",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "storybook": "^8.4.6",
+    "tailwindcss": "^3.4.16",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "dependencies": {
+    "@react-spring/web": "^9.5.5",
+    "lucide-react": "^0.465.0",
+    "react-select": "^5.8.3"
+  }
+}
