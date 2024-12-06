@@ -1,24 +1,30 @@
 {
   "name": "react-texts",
-  "version": "1.0.3",
+  "version": "1.0.10",
   "description": "RCS Business Messaging components for React",
   "main": "dist/index.js",
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "src/fonts"
   ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
+    },
+    "./styles.css": {
+      "default": "./dist/styles.css"
+    },
+    "./fonts.css": {
+      "default": "./dist/fonts.css"
     }
   },
   "scripts": {
     "build:css": "postcss src/index.css -o dist/styles.css",
+    "build:fonts": "postcss src/fonts.css -o dist/fonts.css && cp -r src/fonts dist/",
     "build:ts": "tsc",
-    "build": "npm run build:ts && npm run build:css",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build": "npm run build:ts && npm run build:fonts && npm run build:css"
   },
   "keywords": [
     "react-texts",

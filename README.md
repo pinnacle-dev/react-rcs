@@ -10,10 +10,11 @@ Maintained by [Pinnacle RCS](https://docs.trypinnacle.app/api-reference/api-refe
 npm install react-texts
 ```
 
-Then import the css file:
+Then import the css files:
 
 ```tsx
-import "react-texts/dist/styles.css";
+import "react-texts/styles.css";
+import "react-texts/fonts.css";
 ```
 
 ## Usage
