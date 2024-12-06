@@ -4,6 +4,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
     "./.storybook/preview.{js,jsx,ts,tsx}",
   ],
+  important: true, // This ensures our styles take precedence
+  corePlugins: {
+    preflight: false, // Prevents Tailwind from resetting styles
+  },
   theme: {
     extend: {
       fontFamily: {

@@ -1,10 +1,11 @@
 {
-  "name": "react-rcs",
-  "version": "1.0.0",
-  "description": "A live preview of RCS Business Messages right in your browser",
+  "name": "react-texts",
+  "version": "1.0.2",
+  "description": "RCS Business Messaging components for React",
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "exports": {
     ".": {
@@ -13,10 +14,19 @@
     }
   },
   "scripts": {
-    "build": "tsc",
+    "build:css": "postcss src/index.css -o dist/styles.css",
+    "build:ts": "tsc",
+    "build": "npm run build:ts && npm run build:css",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "keywords": [
+    "react-texts",
+    "texts",
+    "RCS business messaging",
+    "Pinnacle RCS",
+    "Pinnacle"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -29,7 +39,9 @@
     "@storybook/react-vite": "^8.4.6",
     "@storybook/test": "^8.4.6",
     "autoprefixer": "^10.4.20",
+    "chromatic": "^11.20.0",
     "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
     "storybook": "^8.4.6",
     "tailwindcss": "^3.4.16",
     "typescript": "^5.1.6"
@@ -38,8 +50,8 @@
     "react": "^18.2.0"
   },
   "dependencies": {
-    "@react-spring/web": "^9.5.5",
     "lucide-react": "^0.465.0",
     "react-select": "^5.8.3"
-  }
+  },
+  "style": "dist/styles.css"
 }
