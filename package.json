@@ -1,6 +1,6 @@
 {
   "name": "react-texts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "RCS Business Messaging components for React",
   "main": "dist/index.js",
   "files": [
