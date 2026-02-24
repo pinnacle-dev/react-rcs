@@ -37,20 +37,21 @@
   "license": "ISC",
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
-    "@storybook/addon-essentials": "^8.4.6",
-    "@storybook/addon-interactions": "^8.4.6",
-    "@storybook/addon-onboarding": "^8.4.6",
-    "@storybook/blocks": "^8.4.6",
-    "@storybook/react": "^8.4.6",
-    "@storybook/react-vite": "^8.4.6",
-    "@storybook/test": "^8.4.6",
+    "@storybook/addon-essentials": "^8.6.15",
+    "@storybook/addon-interactions": "^8.6.15",
+    "@storybook/addon-onboarding": "^8.6.15",
+    "@storybook/blocks": "^8.6.15",
+    "@storybook/react": "^8.6.15",
+    "@storybook/react-vite": "^8.6.15",
+    "@storybook/test": "^8.6.15",
     "autoprefixer": "^10.4.20",
     "chromatic": "^11.20.0",
     "postcss": "^8.4.49",
     "postcss-cli": "^11.0.0",
-    "storybook": "^8.4.6",
+    "storybook": "^8.6.15",
     "tailwindcss": "^3.4.16",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vite": "^6.3.6"
   },
   "peerDependencies": {
     "react": "^18.2.0"
